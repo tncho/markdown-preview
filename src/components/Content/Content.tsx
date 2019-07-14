@@ -11,10 +11,12 @@ import 'brace/mode/markdown';
 import 'brace/theme/github';
 
 interface ContentProps {
-    store?: AppStore
+    store?: AppStore;
 }
 
-const Content: React.FunctionComponent<ContentProps> = ({ store }: ContentProps) => {
+const Content: React.FunctionComponent<ContentProps> = ({
+    store
+}: ContentProps) => {
     return (
         <ContentStyled>
             <Panel>
@@ -25,7 +27,8 @@ const Content: React.FunctionComponent<ContentProps> = ({ store }: ContentProps)
                     onChange={debounce(200, store!.updateText)}
                     style={{ height: '100%', width: '100%' }}
                     value={store!.text}
-                /></Panel>
+                />
+            </Panel>
             <Panel>
                 <ReactMarkdown source={store!.text} />
             </Panel>

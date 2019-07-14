@@ -1,16 +1,21 @@
 import * as React from 'react';
 import HeaderStyled from './styled';
-import { IoIosSettings } from "react-icons/io";
+import { IoIosSettings } from 'react-icons/io';
 
 interface HeaderComponentProps {
-    children?: any
+    children?: any;
 }
 
-const HeaderComponent: React.FC<HeaderComponentProps> = ({ children = 'Markdown Preview 🕶️' }) => {
+const HeaderComponent: React.FunctionComponent<HeaderComponentProps> = ({
+    children = 'Markdown Preview 🕶️'
+}) => {
     return (
         <HeaderStyled>
             <span> {children} </span>
-            <i> <IoIosSettings size={28} /> </i>
+            <i>
+                {' '}
+                <IoIosSettings size={28} />{' '}
+            </i>
         </HeaderStyled>
     );
 };

@@ -6,7 +6,8 @@ const HeaderStyled = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial,
+        sans-serif;
     padding: 20px;
     width: 100%;
 
@@ -16,7 +17,7 @@ const HeaderStyled = styled.header`
         text-transform: uppercase;
         font-size: 14px;
         letter-spacing: 1px;
-        transition: color .2s ease-out;
+        transition: color 0.2s ease-out;
 
         &:hover {
             color: #35d7bb;

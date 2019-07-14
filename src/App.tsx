@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from "./components/Header/Header";
+import Header from './components/Header/Header';
 import Content from './components/Content/Content';
-import { Provider } from "mobx-react";
+import { Provider } from 'mobx-react';
 import './App.css';
 import AppStore from './core/App.store';
 
@@ -16,6 +16,6 @@ const App: React.FC = () => {
             </div>
         </Provider>
     );
-}
+};
 
 export default App;

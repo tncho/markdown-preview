@@ -1,4 +1,4 @@
-import { action, observable } from "mobx";
+import { action, observable } from 'mobx';
 
 class AppStore {
     @observable text = '';
@@ -6,7 +6,7 @@ class AppStore {
     @action
     updateText = (text: string) => {
         this.text = text;
-    }
+    };
 }
 
 export default AppStore;
